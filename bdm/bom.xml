@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel modelVersion="1.0" productVersion="7.9.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.Mandate">
+            <fields>
+                <field type="TEXT" length="255" name="text" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="mandatedId" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="witness1Accepts" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="approverAccepts" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="witness2Accepts" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="mandatorId" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="mandatedAccepts" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="witness1id" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="witness2id" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="mandatorName" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="mandatedName" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="witness1Name" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="witness2Name" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="processinstanceid" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="temp" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>

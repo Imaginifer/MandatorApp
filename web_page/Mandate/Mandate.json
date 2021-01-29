@@ -1,0 +1,306 @@
+{
+  "designerVersion" : "1.9.45",
+  "id" : "Mandate",
+  "name" : "Mandate",
+  "lastUpdate" : 1611566472366,
+  "rows" : [ [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Pending tasks"
+      },
+      "level" : {
+        "type" : "constant",
+        "value" : "Level 4"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "bdc365b0-d5d2-425b-bcb7-48229534f519",
+    "hasValidationError" : false,
+    "id" : "pbTitle"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "headers" : {
+        "type" : "constant",
+        "value" : [ "Initiator", "Mandated", "Approved" ]
+      },
+      "content" : {
+        "type" : "expression",
+        "value" : "mandates"
+      },
+      "columnsKey" : {
+        "type" : "constant",
+        "value" : [ "mandatorName", "mandatedName", "approverAccepts" ]
+      },
+      "selectedRow" : {
+        "type" : "variable",
+        "value" : ""
+      }
+    },
+    "reference" : "25cfad24-60b5-4b12-90ea-a8abcff6e107",
+    "hasValidationError" : false,
+    "id" : "pbTable"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "headers" : {
+        "type" : "constant",
+        "value" : [ "Ident", "Name", "Details" ]
+      },
+      "content" : {
+        "type" : "expression",
+        "value" : "taskList.taskList"
+      },
+      "columnsKey" : {
+        "type" : "constant",
+        "value" : [ "taskId", "taskName", "desc" ]
+      },
+      "selectedRow" : {
+        "type" : "variable",
+        "value" : "selectedTask"
+      }
+    },
+    "reference" : "c00cad6c-ec03-4e39-8653-398d99371ba5",
+    "hasValidationError" : false,
+    "id" : "pbTable"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "Jump to task"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "URL"
+      },
+      "targetUrl" : {
+        "type" : "expression",
+        "value" : "'/bonita/portal/form/taskInstance/' + selectedTask.taskId"
+      },
+      "pageToken" : {
+        "type" : "constant"
+      },
+      "processName" : {
+        "type" : "constant"
+      },
+      "processVersion" : {
+        "type" : "constant"
+      },
+      "taskId" : {
+        "type" : "constant"
+      },
+      "caseId" : {
+        "type" : "constant"
+      },
+      "target" : {
+        "type" : "constant",
+        "value" : "_self"
+      },
+      "appToken" : {
+        "type" : "constant"
+      },
+      "urlParams" : {
+        "type" : "constant"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "primary"
+      }
+    },
+    "reference" : "2fe6ebeb-fa40-4526-94e2-e83a333022b8",
+    "hasValidationError" : false,
+    "id" : "pbLink"
+  }, {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 6
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "New mandate"
+      },
+      "type" : {
+        "type" : "constant",
+        "value" : "URL"
+      },
+      "targetUrl" : {
+        "type" : "constant",
+        "value" : "/bonita/portal/form/process/Mandation%20Process/1.0"
+      },
+      "pageToken" : {
+        "type" : "constant"
+      },
+      "processName" : {
+        "type" : "constant"
+      },
+      "processVersion" : {
+        "type" : "constant"
+      },
+      "taskId" : {
+        "type" : "constant"
+      },
+      "caseId" : {
+        "type" : "constant"
+      },
+      "target" : {
+        "type" : "constant",
+        "value" : "_self"
+      },
+      "appToken" : {
+        "type" : "constant"
+      },
+      "urlParams" : {
+        "type" : "constant"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "right"
+      },
+      "buttonStyle" : {
+        "type" : "constant",
+        "value" : "primary"
+      }
+    },
+    "reference" : "13405701-aa31-41cb-a18d-8a7a1888f01e",
+    "hasValidationError" : false,
+    "id" : "pbLink"
+  } ], [ {
+    "type" : "component",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : ""
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "labelHidden" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "label" : {
+        "type" : "interpolation",
+        "value" : "Default label"
+      },
+      "labelPosition" : {
+        "type" : "constant",
+        "value" : "top"
+      },
+      "labelWidth" : {
+        "type" : "constant",
+        "value" : 4
+      },
+      "allowHTML" : {
+        "type" : "constant",
+        "value" : true
+      },
+      "text" : {
+        "type" : "interpolation",
+        "value" : "{{taskList}}"
+      },
+      "alignment" : {
+        "type" : "constant",
+        "value" : "left"
+      }
+    },
+    "reference" : "d208cb90-5ed3-497f-9371-2a952efdb442",
+    "hasValidationError" : false,
+    "id" : "pbText"
+  } ] ],
+  "assets" : [ {
+    "id" : "db10a285-79c1-4610-b3c2-7db4880786c9",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "mandates" : {
+      "type" : "url",
+      "value" : "../API/bdm/businessData/com.company.model.Mandate?q=find&p=0&c=100",
+      "exposed" : false
+    },
+    "taskList" : {
+      "type" : "url",
+      "value" : "../API/extension/UserTasks",
+      "exposed" : false
+    },
+    "selectedTask" : {
+      "type" : "json",
+      "value" : "{}",
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "53d7b275-1df4-46c4-a779-d71046f6d768",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}
